@@ -13,7 +13,7 @@ const image = require('./controllers/image');
 const db = knex({
     client: 'pg',
     connection: {
-      host : rocess.env.DATABASE_URL,
+      host : process.env.DATABASE_URL,
       ssl: true,
     //   ssl: {
     //     rejectUnauthorized: false
